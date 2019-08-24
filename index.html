@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta author="Jonathan Franco">
+  <title>Empresa - Seu Slogan</title>
+  <link rel="icon" href="img/icon.png" type="image/png" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/mdb.css">
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="js/mdb.js"></script>
+  <script type="text/javascript" src="js/side-menu.js"></script>
+  <script type="text/javascript" src="js/loading.js"></script>
+  <script type="text/javascript" src="js/velocity.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+</head>
+
+<body onload="loading();" data-spy="scroll" data-target=".navbar" data-offset="100">
+
+  <div id="background-load">
+    <div class="load"></div>
+  </div>
+
+  <!-- Main Navigation -->
+<header id="home">
+  <!--Desktop Menu-->
+    <nav id="nav-color" class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container nav-effect">
+        <a class="navbar-brand" href="index.html" style="color: #fff3e0">LOGO</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+          <ul class="ml-2 nav nav-pills smooth-scroll">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#avaliacoes">Avaliações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+              <a id="face-icon" class="nav-link waves-effect waves-light">
+                <i class="fab fa-facebook-f h5-responsive"></i></a>
+            </li>
+            <li class="nav-item">
+              <a id="insta-icon" class="nav-link waves-effect waves-light">
+                <i  class="fab fa-instagram h5-responsive"></i></a>
+            </li>
+            <li class="nav-item">
+              <a id="whatsapp-icon" class="nav-link waves-effect waves-light">
+                <i  class="fab fa-whatsapp h5-responsive"></i></a>
+            </li>
+            <li class="nav-item">
+              <a id="maps-icon" class="nav-link waves-effect waves-light">
+                <i  class="fas fa-map-marker-alt h5-responsive"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Desktop Menu-->
+
+      <!--Mobile Menu-->
+      <div class="btn-menu">
+        <i class="fas fa-bars mr-3 h1 btn-menu" onclick="openNav()"></i>
+        <span class="logo-mobile h1">LOGO</span>
+      </div>
+      <div id="myNav" class="nav-mobile" style="overflow: hidden;">
+
+      <div id="side-menu-nav" class="my-4 ml-3">
+      <span class="logo-mobile mr-auto mt-2 h1">LOGO</span>
+      <span id="close-btn" class="closebtn mr-2 h1" onclick="closeNav()"><i class="h1 fas fa-times"></i></span>
+      </div>
+
+        <hr class="my-0 white">
+
+        <div class="container navbar-light nav-mobile-content text-left navbar-nav mobile-pills" id="menu-content">
+          <li class="nav-item mobile-pills"  onclick="closeNav()">
+            <a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a>
+          </li>
+
+          <li class="nav-item mobile-pills"  onclick="closeNav()">
+            <a class="nav-link" href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+          </li>
+
+          <li class="nav-item mobile-pills"  onclick="closeNav()">
+            <a class="nav-link" href="#avaliacoes"><i class="fas fa-star"></i> Avaliações</a>
+          </li>
+
+          <li class="nav-item mobile-pills"  onclick="closeNav()">
+            <a class="nav-link" href="#contato"><i class="fas fa-envelope"></i> Contato</a>
+          </li>
+
+          <li class="row justify-content-center mt-5 py-5" style="color: #fff3e0;">
+            <a><i class="fab fa-facebook-f mx-1"></i></a>
+            <a><i class="fab fa-instagram mx-1"></i></a>
+            <a><i class="fab fa-whatsapp mx-1"></i></a>
+            <a><i class="fas fa-map-marker-alt mx-1"></i></a>
+          </li>
+          
+        </div>
+      </div>
+      <!--Mobile Menu-->
+
+  </nav>
+
+<!--Index-->
+<div id="intro" class="view smooth-scroll" style="background-image: url('img/index.jpg');background-size: cover;background-position: center;font-family: 'Luckiest Guy', cursive;">
+
+<div class="mask text-center rgba-black-light">
+  
+          <div class="container-fluid d-flex justify-content-center align-items-center h-100">
+
+                <div class="col-md-9 wow bounceInDown" data-wow-delay="0.4s">
+
+                    <!-- Heading -->
+                    <p id="shadow-effect" class="orange-text display-4 font-weight-bold spacing text-center">Nome da Empresa</p>
+
+                    <!-- Description -->
+                <p id="shadow-effect" class="text-uppercase text-light my-5 font-weight-bold spacing h4-responsive">Slogan da sua empresa aqui</p>
+                <a id="shadow-effect" href="#down"><i class="h1 py-4 fas fa-chevron-down white-text"></i></a>   
+
+                </div>
+
+        </div>
+  
+</div>
+</div>
+
+
+</header>
+  <!-- Main Navigation -->
+
+  <!-- Main content -->
+  <main>
+
+    <!--Introduções-->
+    <section id="down" class="white-color" style="overflow: hidden;">
+      <div class="row">
+        <div class="col-md-4 orange lighten-2 py-5">
+          <div class="p-5 wow bounceIn" data-wow-delay="0.4s">
+            <!-- Heading -->
+            <h1 class="font-weight-bold white-text text-left"><i class="fas fa-cocktail"></i> EXEMPLO</h1>
+            <!-- Description -->
+            <h5 class="white-text px-3" style="border-left: 4px solid #fff">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h5>    
+          </div>
+        </div>
+        <div class="col-md-4 orange darken-1 py-5">
+          <div class="p-5 wow bounceIn" data-wow-delay="0.5s">
+            <!-- Heading -->
+            <h1 class="font-weight-bold white-text text-left"><i class="fas fa-thumbs-up"></i> EXEMPLO</h1>
+            <!-- Description -->
+            <h5 class="white-text px-3" style="border-left: 4px solid #fff">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h5>    
+          </div>
+        </div>
+        <div class="col-md-4 orange darken-3 py-5">
+          <div class="p-5 wow bounceIn" data-wow-delay="0.6s">
+            <!-- Heading -->
+            <h1 class="font-weight-bold white-text text-left"><i class="fas fa-award"></i> EXEMPLO</h1>
+            <!-- Description -->
+            <h5 class="white-text px-3" style="border-left: 4px solid #fff">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h5>    
+          </div>
+        </div>
+        
+      </div>
+  </section>
+  <!--Introduções-->
+
+      <!--Sobre-->
+      <section id="sobre" class="container py-5">
+
+        <!--Section heading-->
+        <div class="row mt-5 mb-4 justify-content-center d-flex align-items-center">
+          <div class="col-md-3 mb-3">
+              <h3 class="text-center text-uppercase font-weight-bold mr-3 ml-3 wow fadeIn" data-wow-delay="0.2s">Sobre Nós</h3>
+              <hr class="orange">
+          </div>
+        </div>
+
+        <!--First row-->
+        <div class="row smooth-scroll">
+
+          <!--First column-->
+          <div class="col-lg-6 col-md-12 wow fadeIn" data-wow-delay="0.4s">
+
+            <!--Title-->
+            <h4 class="mb-4 text-center">All European cuisine in one place</h4>
+
+            <!--Description-->
+            <p class="grey-text mb-4" align="justify">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum
+              deleniti atque corrupti quos dolores et quas molstias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+              fuga.
+            </p>
+
+          </div>
+          <!--/First column-->
+
+          <!--Second column-->
+          <div class="col-lg-5 ml-auto col-md-12 mb-5 wow fadeIn" data-wow-delay="0.4s">
+
+            <!--Image-->
+            <img src="img/sobre.jpg" alt="" class="z-depth-0 img-fluid">
+
+          </div>
+          <!--/Second column-->
+
+        </div>
+        <!--/First row-->
+
+      </section>
+      <!--Sobre-->
+
+      <!--Promoção-->
+      <section id="promo">
+        <div class="streak streak-photo streak-md" style="background-image: url('img/promo.jpg');background-attachment: fixed;background-repeat: no-repeat;background-size: cover">
+          <div class="flex-center mask rgba-black-strong">
+            <div class="text-center white-text container wow pulse" data-wow-delay="0.4s">
+              <i class="fas fa-info-circle display-2 mb-2"></i>
+              <p class="h1-responsive"> Aproveite Nossas Promoções e entre em contato conosco por email ou pelas redes sociais.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Promoção-->
+
+      <!--Avaliações-->
+      <section id="avaliacoes" class="py-5 container">
+
+          <!--Secion heading-->
+        <div class="row mt-5 mb-4 justify-content-center d-flex align-items-center">
+          <div class="col-md-5 mb-3">
+              <h3 class="text-center text-uppercase font-weight-bold mr-3 ml-3 wow fadeIn" data-wow-delay="0.2s">Nossa Avaliações</h3>
+              <hr class="orange">
+          </div>
+        </div>
+            <!--/Secion heading-->
+
+            <!--Section description-->
+            <p class="text-center grey-text w-responsive mx-auto mb-5 wow fadeIn" data-wow-delay="0.2s">Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate
+              esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.
+            </p>
+
+            <!--First row-->
+            <div class="row text-center">
+
+              <!--First column-->
+              <div class="col-md-4 mb-4 wow fadeIn" data-wow-delay="0.4s">
+
+                <div class="testimonial">
+                  <!--Avatar-->
+                  <div class="avatar mx-auto mb-4">
+                    <img src="img/cliente.jpg" class="rounded-circle img-fluid z-depth-1-half">
+                  </div>
+
+                  <!--Content-->
+                  <h4 class="font-weight-bold">Cliente</h4>
+                  <p>
+                    <i class="fas fa-quote-left "></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
+                    id officiis hic
+                    tenetur quae quaerat ad velit ab.
+                  </p>
+
+                </div>
+              </div>
+              <!--/First column-->
+
+              <!--Second column-->
+              <div class="col-md-4 mb-4 wow fadeIn" data-wow-delay="0.4s">
+                <div class="testimonial">
+                  <!--Avatar-->
+                  <div class="avatar mx-auto mb-4">
+                    <img src="img/cliente.jpg" class="rounded-circle img-fluid z-depth-1-half">
+                  </div>
+
+                  <!--Content-->
+                  <h4 class="font-weight-bold">Cliente</h4>
+                  <p>
+                    <i class="fas fa-quote-left"></i> Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                    corporis suscipit laboriosam,
+                    nisi ut aliquid ex ea commodi.</p>
+
+                </div>
+              </div>
+              <!--/Second column-->
+
+              <!--Third column-->
+              <div class="col-md-4 mb-4 wow fadeIn" data-wow-delay="0.4s">
+                <div class="testimonial">
+                  <!--Avatar-->
+                  <div class="avatar mx-auto mb-4">
+                    <img src="img/cliente.jpg" class="rounded-circle img-fluid z-depth-1-half">
+                  </div>
+                  <!--Content-->
+                  <h4 class="font-weight-bold">Cliente</h4>
+                  <p>
+                    <i class="fas fa-quote-left"></i> At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                    blanditiis praesentium
+                    voluptatum deleniti atque corrupti.</p>
+
+                </div>
+              </div>
+              <!--/Third column-->
+
+            </div>
+            <!--/First row-->
+
+      </section>
+      <!--Avaliações-->
+
+      <div class="container"><hr></div>
+
+      <!--Contato-->
+      <section id="contato" class="py-5 container">
+
+        <div class="row mt-5 mb-4 justify-content-center d-flex align-items-center">
+          <div class="col-md-5 mb-3">
+              <h3 class="text-center text-uppercase font-weight-bold mr-3 ml-3 wow fadeIn" data-wow-delay="0.2s">Entre em Contato</h3>
+              <hr class="orange">
+          </div>
+        </div>
+            <!--/Secion heading-->
+
+            <!--Section description-->
+            <p class="text-center grey-text w-responsive mx-auto mb-5 wow fadeIn" data-wow-delay="0.2s">Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate
+              esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.
+            </p>
+
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-lg-5 my-5 wow fadeIn" data-wow-delay="0.4s">
+
+            <!--Form-->
+            <form method="POST" action="send_email.php" class="card p-4 text-center border border-light">
+
+              <!-- Default form contact -->
+
+              <p class="h3-responsive orange-text"><i class="fas fa-mail-bulk"></i> Mande sua Mensagem</p>
+
+              <hr class="orange mb-4 mt-0">
+
+              <!-- Name -->
+              <input type="text" class="form-control mb-4 field-icon" placeholder="Seu Nome" name="nome" id="nome" required="">
+
+              <!-- Email -->
+              <input type="email" class="form-control mb-4 field-icon" placeholder="Seu Email" name="email" id="email" required="">
+
+              <!-- Message -->
+              <div class="form-group">
+                <textarea class="form-control rounded-0 mb-4 field-icon" placeholder="Sua Mensagem" name="msg" id="msg" required=""rows="3"></textarea>
+              </div>
+
+
+              <div class="text-center mt-4">
+                <button type="reset" class="btn btn-outline-orange btn-rounded btn-md">Limpar</button>
+                <button class="btn btn-orange btn-rounded btn-md">Enviar</button>
+              </div>
+
+            </form>
+            <!--Form-->
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-7 my-5 wow fadeInRight" data-wow-delay="0.4s">
+
+            <!--Google map-->
+            <div id="map-container-google-2" class="z-depth-1-half map-container" style="border:3px solid orange;border-radius: 10px">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254789.90439919173!2d-38.65903351736688!3d-3.7900894045859563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74c3f464c783f%3A0x4661c60a0c6b37ca!2sFortaleza+-+CE!5e0!3m2!1spt-BR!2sbr!4v1566527351865!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+            </div>
+            <div class="row my-4 grey-text">
+              <div class="col-md-12">
+                <p class="h6-responsive"><i class="fas fa-map-marked mr-3"></i><b>Endereço do Estabelecimento</b></p>
+                <p class="h6-responsive"><i class="fas fa-clock mr-3"></i>Seg - Sex: 8:00 às 18:00. Sáb: 08:00 às 12:00</p>
+              </div>
+
+            </div>
+
+            <!--Google Maps-->
+
+            <br>
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+
+      </section>
+      <!--Contato-->
+
+  </main>
+
+<!-- Footer -->
+<footer class="page-footer font-small warning-color-dark">
+  <div class="orange lighten-2 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container">
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h4 class="mb-0 font-weight-bold">Siga nossas redes sociais!!!</h4>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+          <!-- Facebook -->
+          <a class="btn-floating btn-sm bg-primary mx-1">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Instagram -->
+          <a class="btn-floating btn-sm pink accent-2 mx-1">
+            <i class="fab fa-instagram white-text mr-4"> </i>
+          </a>
+          <!--Whatsapp-->
+          <a class="btn-floating btn-sm bg-success mx-1">
+            <i class="fab fa-whatsapp white-text mr-4"> </i>
+          </a>
+          <!--Maps-->
+          <a class="btn-floating btn-sm bg-secondary mx-1">
+            <i class="fas fa-map-marker-alt white-text"> </i>
+          </a>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row-->
+    </div>
+  </div>
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5 wow fadeIn" data-wow-delay="0.2s">
+    <!-- Grid row -->
+    <div class="row mt-3">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">NOME DA EMPRESA</h6>
+        <hr class="white accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          consectetur
+          adipisicing elit.</p>
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 smooth-scroll">
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Mapa do Site</h6>
+        <hr class="white accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#home">Home</a>
+        </p>
+        <p>
+          <a href="#sobre">Sobre</a>
+        </p>
+        <p>
+          <a href="#avaliacoes">Avaliações</a>
+        </p>
+        <p>
+          <a href="#contato">Contato</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Telefones</h6>
+        <hr class="white accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-phone mr-3"></i> (85) 99999-9999</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> (85) 99999-9999</p>
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contato</h6>
+        <hr class="white accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© Copyright -
+    <strong> EMPRESA</strong>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<!-- Top Button -->
+<div id="btntop" class="fixed-action-btn smooth-scroll" style="display: none;">
+<a href="#home" class="btn-floating btn-md" id="btn-fixed-style" title="Voltar ao início" onclick="btn_top();"><i class="fas fa-angle-up"></i></a>
+</div>
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdb.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
+<script type="text/javascript" src="js/side-menu.js"></script>
+
+</body>
+
+</html>

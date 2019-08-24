@@ -1,0 +1,387 @@
+body{
+	user-select: none;
+	margin: 0;
+	padding: 0;	
+  font-family: 'Livvic', sans-serif;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed!important;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section{
+  overflow: hidden!important;
+  background-position: center!important;
+  font-family: 'Livvic', sans-serif;
+}
+
+html,
+body,
+header,
+#intro {
+  height: 100%;
+  user-select: none;
+  background-attachment: fixed;
+}
+
+#intro {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.page-footer{
+  cursor: default;
+  user-select: text;
+}
+
+.top-nav-collapse {
+  transition: 0.5s;
+  background-color: #e65100!important;
+  box-shadow: none;
+}
+
+.nav-info{
+  border-bottom: 1px solid rgb(50,50,50);
+  user-select: text;
+  cursor: default;
+}
+
+.nav-pills > li > a.active {
+  background-color: transparent!important;
+  color: #fff3e0!important;
+  border: 0px!important;
+  border-radius: 0%!important;
+  transform: scale(1.1);
+  transition: 0.3s;
+  font-weight: bold;
+  text-shadow: 0 0 15px #fff3e0, 0 0 10px #fff3e0;
+}
+
+.mobile-pills > li > a.active  {
+  background-color: rgba(0,0,0,0.1)!important;
+  color: #ffb74d!important;
+  border-left: 5px solid #ffb74d!important;
+  border-radius: 0%!important;
+  transition: 0.3s;
+  width: 100%;
+  font-weight: bold;
+}
+
+.nav-link{
+  color: #fff3e0!important;
+}
+
+.nav-link:hover{
+  color: #ffffff!important;
+  transition: 0.2s!important;
+}
+
+#nav-logo{
+  transition: 0.2s;
+  transform: scale(1.3);
+}
+
+.logo-mobile{
+  color: #fff3e0!important;
+}
+}
+
+.navbar{}
+#nav-color{
+  background-color: rgba(0,0,0,0.2);
+  font-family: 'Livvic', sans-serif;
+}
+
+.nav-mobile {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  background-image: linear-gradient(to right, #3E4551, #4B515D);
+  /*
+  overflow-y: scroll!important;
+  */
+}
+
+.btn-menu {
+  display: none;
+  color: #fff3e0;
+  float: left!important;
+}
+
+.nav-mobile-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  margin-top: 30px;
+  transition: 0.5s;
+    /*
+  overflow-y: scroll!important;
+  */
+}
+
+.nav-mobile a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-mobile a:hover, .nav-mobile a:focus {
+  color: #f1f1f1;
+}
+
+.nav-mobile .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 60px;
+  color: #fff3e0!important;
+}
+.navbar-brand-mobile{
+  display: none;
+}
+
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.load{
+  width: 100px;
+  height: 100px;
+  border: 5px solid #fff;
+  border-top:5px solid #ff6d00 ;
+  border-radius: 100%;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right: 0;
+  margin: auto;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from{
+      transform: rotate(0deg);
+  }to{
+      transform: rotate(360deg);
+  }
+}
+
+#background-load{
+  height:100%;
+  width:100%;
+  background:#ff6d00;
+  position:fixed;
+  left:0;
+  top:0;
+  z-index: 9999;
+  overflow: hidden!important;
+ }
+
+/*indicators-carousel
+
+ .indicator{
+  background-color: #ddd!important;
+ }
+
+ ol li.active{
+  background-color: rgb(255,53,71)!important;
+ }
+
+*/
+
+#btn-fixed-style{
+  background-color: #ff9800!important;
+  opacity: 0.7;
+}
+
+#btn-fixed-style:hover{
+  opacity: 1!important;
+}
+
+/*
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: red; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+*/
+
+#shadow-effect{
+  text-shadow: 10px 10px 20px black!important;
+}
+
+.card-img-top{
+  height: 230px;
+  background-color: #fff;
+}
+
+.face:hover{
+  background-color: red!important;
+}
+
+.fa-chevron-down{
+  transition: 0.5s;
+}
+
+.fa-chevron-down:hover{
+  transform: translateY(10px);
+  transition: 0.5s;
+}
+
+#face-icon:hover,#insta-icon:hover,#whatsapp-icon:hover,#maps-icon:hover{
+  color: #fff3e0;
+  transition: 0.2s;
+  transform: translateY(1px);
+  text-shadow: 0 0 15px #fff3e0, 0 0 10px #fff3e0;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #e0e0e0; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #757575; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #616161; 
+}
+
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #e65100;
+  }
+  .nav-lg{
+    display: none;
+  }
+  .btn-menu{
+    display: inline-block;
+    float: left;
+  }
+  .navbar-brand{
+    display: none;
+  }
+  .navbar-brand-mobile{
+    display: block;
+  }
+  .carousel-indicators{
+    display: none;
+  }
+  #fb-desk{
+    display: none!important;
+  }
+  #fb-mobile{
+    display: initial!important;
+  }
+  #intro{
+    margin-top: 60px!important;
+  }
+  #nav-color{
+  background-color: #e65100;
+}
+
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #e65100;
+  }
+  .nav-lg{
+    display: none;
+  }
+  .btn-menu{
+    display: inline-block;
+    float: left;
+  }
+  .navbar-brand{
+    display: none;
+  }
+  .navbar-brand-mobile{
+    display: block;
+  }
+  .carousel-indicators{
+    display: none;
+  }
+  #fb-desk{
+    display: none!important;
+  }
+  #fb-mobile{
+    display: initial!important;
+  }
+  #intro{
+    margin-top: 60px!important;
+  }
+  #nav-color{
+  background-color: #e65100;
+}
+
+}
+
+@media screen and (max-height: 450px) {
+.nav-mobile a {font-size: 20px}
+.nav-mobile .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  height: 100%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+.nav-mobile {
+  overflow-y: scroll!important;
+
+}
+.nav-mobile-content {
+    overflow-y: scroll!important;
+  }
+}
