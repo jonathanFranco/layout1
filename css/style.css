@@ -323,11 +323,14 @@ header,
     display: initial!important;
   }
   #intro{
-    margin-top: 60px!important;
+    margin-top: 55px!important;
   }
   #nav-color{
   background-color: #e65100;
-}
+  }
+  .nav-link{
+    font-size: 27px!important;
+  }
 
 }
 
@@ -358,11 +361,14 @@ header,
     display: initial!important;
   }
   #intro{
-    margin-top: 60px!important;
+    margin-top: 55px!important;
   }
   #nav-color{
   background-color: #e65100;
-}
+  }
+  .nav-link{
+    font-size: 27px!important;
+  }
 
 }
 
