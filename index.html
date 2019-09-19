@@ -3,6 +3,8 @@
   <meta charset="utf-8" name="viewport"
     content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta author="Jonathan Franco">
+  <meta name="theme-color" content="#e65100">
+  <meta name="msapplication-navbutton-color" content="#e65100">
   <title>Empresa - Seu Slogan</title>
   <link rel="icon" href="img/icon.png" type="image/png" />
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -114,7 +116,7 @@
   </nav>
 
 <!--Index-->
-<div id="intro" class="view smooth-scroll" style="background-image: url('img/index.jpg');background-size: cover;background-position: center;font-family: 'Luckiest Guy', cursive;">
+<div onclick="closeNav()" id="intro" class="view smooth-scroll" style="background-image: url('img/index.jpg');background-size: cover;background-position: center;font-family: 'Luckiest Guy', cursive;">
 
 <div class="mask text-center rgba-black-light">
   
@@ -143,7 +145,7 @@
   <!-- Main Navigation -->
 
   <!-- Main content -->
-  <main>
+  <main onclick="closeNav()">
 
     <!--Introduções-->
     <section id="down" class="white-color" style="overflow: hidden;">
@@ -409,7 +411,7 @@
   </main>
 
 <!-- Footer -->
-<footer class="page-footer font-small warning-color-dark">
+<footer onclick="closeNav()" class="page-footer font-small warning-color-dark">
   <div class="orange lighten-2 wow fadeIn" data-wow-delay="0.2s">
     <div class="container">
       <!-- Grid row-->
